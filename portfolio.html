@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Majd Ouda</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #331;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+  background-color: red;
+  
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: purple;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: blue;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+<script src=""></script>
+<body>
+
+<!-- <img src="img_la.jpg" alt="LA" style="width:100%"> -->
+
+<div class="">
+ <h1></h1>
+ <p></p>
+ <p></p>
+</div>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#references">References</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 id="home">I am Majd Ouda</h1>
+    <p>Software Engineer in Training</p>
+    <button>Learn More</button>
+  </div>
+</div>
+
+<div style="text-align:center" class="about-me-page"id="about">
+  <h1 id="about">About Me Page</h1>
+  <p>Currently a Western University student learning about the great world of code and technology!</p>
+  <p>Having the oppurtunity to build the future of code and being able to have different oppurtunties to show skill!</p>
+</div>
+
+<div style="text-align:center" class="work-experience"id="experience">
+  <h1>___________________________________________________________________________</h1>
+  <h1 id="experience">Work Experience</h1>
+  <p>Costco: Provided excellent customer service when approached by shoppers, assisting with product location and inquiries while maintaining a friendly and helpful demeanor.</p>
+  <p>Pet Valu: Productively utilized the cash register, dealt with cash, and scanned products efficiently to satisfy customer needs.</p>
+  <h1>___________________________________________________________________________</h1>
+</div>
+
+<h2 style="text-align:center" id="references">References</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="carts.jpg" alt="Nassri" style="width:100%">
+      <div class="container">
+        <h2>Nassri Alnassri</h2>
+        <p class="title">Co-Worker</p>
+        <p>Current Computer Science student with the vision for future belief in the world of code.</p>
+        <p>(519)-084-3902</p>
+		<p>nalnass@uwo.ca</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="costco.jpg" alt="Omar" style="width:100%">
+      <div class="container">
+        <h2>Omar Chams</h2>
+        <p class="title">Manager</p>
+        <p>Current Costco manager with great work ethic and always ready to take on new challenges</p>
+        <p>(226)-200-9814</p>
+		<p>omarchams@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Me</h2>
+    <p id="contact">Leave me a message :)</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="me.jpg" style="width:50%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="mexico">Mexico</option>
+		  <option value="england">England</option>
+          <option value="spain">Spain</option>
+          <option value="germany">Germany</option>
+          <option value="russia">Russia</option>
+          <option value="france">France</option>
+          <option value="usa">USA</option>
+
+        </select>
+        <label for="subject">What's Up!</label>
+        <textarea id="subject" name="subject" placeholder="What's on your mind?" style="height:170px"></textarea>
+        <input type="reset" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: turquoise;
+  color: white;
+  text-align: center;
+}
+</style>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>
